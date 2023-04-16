@@ -3,8 +3,8 @@
 # shellcheck disable=SC2046,SC2086
 
 __main() {
-  DLL=$1
-  PDB=${1//.dll/.pdb} # | sed s/\.dll/\.pdb/g)
+  DLL=$(realpath "./$1")
+  PDB=${1//.dll/.pdb}
   OUT=$2
 
   if [[ -f $PDB ]]; then local -r USE_PDB=true; fi

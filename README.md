@@ -1,5 +1,7 @@
 # Docker ilspycmd Image
 
+The Dockerfile in the `main` branch contains the latest official release version, the prerelease branch contains the latest prerelease version.
+
 ## Usage
 
 ```bash
